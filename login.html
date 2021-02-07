@@ -1,0 +1,99 @@
+<!-- Material form login -->
+<html>
+<head>
+<style>
+#parent{
+   display: table;
+   width: 100%;
+}
+
+#form_login{
+display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+
+}
+body, html {   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+vertical-align:middle;
+  }
+
+#form_login {
+    display:table;/* shrinks to fit content */
+    margin:auto;
+}
+</style>
+</head>
+<mdb-card>
+<div >
+  <mdb-card-header class="info-color white-text text-center py-4">
+    
+      <strong><h1 style="text-align:center">Sign in</h1></strong>
+    
+  </mdb-card-header>
+<body>
+
+  <!--Card content-->
+  <mdb-card-body class="px-lg-5 pt-0">
+<div id="parent">
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" id="form_login">
+
+      <!-- Email -->
+      <div class="md-form">
+        <label for="materialLoginFormEmail">E-mail</label><br>
+	<input type="email" id="materialLoginFormEmail" class="form-control" mdbInput>
+        
+      </div>
+<br>
+      <!-- Password -->
+      <div class="md-form">
+        <label for="materialLoginFormPassword">Password</label><br>
+        <input type="password" id="materialLoginFormPassword" class="form-control" mdbInput>
+
+      </div>
+<br>
+      <div class="d-flex justify-content-around">
+        <div>
+          <!-- Remember me -->
+          <mdb-checkbox>Remember me</mdb-checkbox>
+        </div>
+        <div>
+          <!-- Forgot password -->
+          <a href="">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Sign in button -->
+      <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+        type="submit">Sign in</button>
+
+      <!-- Register -->
+      <p>Not a member?
+        <a href="">Register</a>
+      </p>
+
+      <!-- Social login -->
+      <p>or sign in with: <br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAAB2CAMAAAAJDgSzAAAAY1BMVEX///86VZ98irkuTZvk5u9CW6JzhLc0UZ0UP5bh5O/q7PRdca5Xbavn6fIzUZ9RaKgoSpvDyuHW2ujy9Pltf7ZMY6YeQ5elr86HlL/L0OT4+fy1vdeut9QMO5Whq82QnMQANZJK6p8BAAACCklEQVR4nO3dWY+CMBQFYGrFsogUWWSRcf7/r5xkXlhaaRyShnvnnFf1JJ+CyEVtECD2JGffSTwLTyL0G3HyLdTCb7R3ofQslBBCCCGEEEIIIYQQQgjh/qh1GAmV1CKs81VqNkLVhO2ji8t+meC+Pv+kKmzEcO5t/UyEOn++6+chjNr30yUWQvn2BQx4CGW31c9A2Ayb/fSFemsTDRgI5cV6jJhCXji6ZvTUhc2Xq5+4UNVnVz9xoX45+4kL1eah8De0hSp0vJEG1IXyYu/syykdaaG2vpMmj7aakhpPCyVhVFgKu1rL2xTaU4zxbvYVjWEiLIxis0/eHA+iLhwi14OoC1tnHXXhxbWR0hfyfw0hhBBCCCGEEEL6wuUF7NEi1I6L3EcX5uk8YWbUtdd0GWJXudWQzGMCgzJZpnyt+48tvNnGFtsxdkx2wnq9J7ITGuf83ITlN3dhPHIXFg134ZfxkxxuQrOem7AiNtX/WNin3IWZ8bGUm/AechcW1M6ePhY+zd9vMhOah0NuwpaaUD2TbBbL954Xt2dxZV6KOrZQ1Nd5bFOMfHEPS8XBhcI1iark9hzq+MJFOE4TIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCH858Idqz/8Seh/9YcdK3ho83+w3HXeV/DYswpLbPnm3vFWYaGTH27fTzWSVJe6AAAAAElFTkSuQmCC" height=20px width=40px>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAATlBMVEX///8tquEAo98Aod4jqOD4/P4bpuDy+f3u9/w+r+OFyOuj1fDg8fq13fPE5PXl8/vQ6feZ0e5Is+Rovei84PRZuObZ7fh6xOqRze1wwOg64ZUtAAADl0lEQVRoge2a15qjMAxGsS0EpgbT3/9F15AyCYEgYTJzsT53+23sH8kqLhMEHo/H4/F4PB6P5/8iiuI4jv5AOLwMtdFCCFMPl9+VLgdQCDdQiSFe/iL/lnSYSBDPAMrkxf05DOTJCpZ2IV6lZ1A8JilT+683V2yRYsfQTnFFe7I+nf43bkaBgBV5Oo26JP94wDXpCVldqlpI+22gyTlwUQIN1U3VprZ1vRWevaLo8Z/YAUBcpEJta/+4ICVrh2b6Wpp6BKvrvXDALdIpE8byGjCCEHXJB6ffuAVbmZqQIN7J2yho9n6aEbR1E0SdDTzaujfy9ZvdDBdVVWsbeMR1z+VjILYfUyTW+ysOOEe8TEjaP5ZPQ+Un1xdyW/QVqvbrlCD77XpD8TpPO8heUxdFuhWmLSHP5inI2kG0GApo1hvNtSDsAkjuaJZ6OSfIdk2eEm+kjH0mfV9KkPp9N1CutdL3oRlH+17ils6DZFHyYpI4vZNfGVej2MqboXtK/Ijkdq54t5W/tmKYPs/uH0CLdqZ4MG7PCiClaJO06eKgJ+U5Vzz6vJp2g4pSKUWKN80VDy7r+7IDgOGfInJq5dwVbylt/EGah7P6ObZDzTK6UnrowuBCS6Q9GHV9Ipf2wANtkpwjTt88TlzmLAfK1pCA5J1+orMCfUYxM43apimA4GmvdbXj4iNTfLWrHYQZb5b+PL8rznn3ZNMBuNqfj54ssOeLnxbwyMvyK7S94T7A6ip3Mtr+bAdmYX+y/YR1h8M3cr10NR7ao9r20GYce7p0ufkL8xYd9IF0F/GBsqEdyFYNZ5fWB2PdJ8nYHm/roI8bXkw3uS6L7rTijnUGjIN20Lgl+qHK+kPros7eRSyIXbSBfUpa4HBoQtZ1xCrF0UQ71MffbD+mfuR0uEJ2qL4j7x5mmxTY3U25L/idMNXzsxXdbvqDCoWumh7sqPeNnDs/GmFM3M3T71npZMR69w3tirjmX9DOBe0MQ31PoBPm1Fxn3vHuk1XkMoPmrNoyEWZpS97MAPauNfU+PiyLqp9ehWjK57g819q0xgiU93dQmrRyNns2ebC1nNnLQNbsO4AN4oG3acX1R5CjlIOmhxnUhePBZEmcG4r5iGL59nEONsGl/LD4gBLH5mSjn4jzXiuJi7Cf/hhFKqirr9j8+gE231s9pZ6yTAmo23HIs++ZvCCM4jLrZrIyjn5N1+PxeDwej8fj8fw5/wD18yhG+gqgIgAAAABJRU5ErkJggg==" height=20px width=25px>&nbsp
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLU2kfPp4l2ho-VtoKuGI8dN4geEp5mYlOvg&usqp=CAU" height=20px width=30px>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAAB5CAMAAAAahK0fAAAAZlBMVEX///8Ad7cAcrXi6/Q7gbuiwNwAdbYAbrQAbLSuyODQ4e+py+MAcLQ8i8IAZ7DE2+vp8fcmhb5Mj8P1+vxinct+p9CPt9hxqNAjernX5vF9qtBal8chgLy30uY3h8BuocyMsNQAYa+SzY/zAAAD7UlEQVR4nO3d63KjIBgG4ICKRokaSS0aTbL3f5OrbWM8fDb9gRyEd2ZnOis9PMEDAuLh4PKnsNzbODlTbTwkl8LfPMUlUWlkCUoxIWjjEIJTlCirUlZHmxMHalQrcrIPKk3ZOemHGmcZyUP2iUoVylxmXfYhNFfA/KRylQjRT/lKxiVXZledXP7RmUlXds5MOjNRwZTfSgiwfCYOtGGSr+ybSTDh/u3k8+6L/TIprxOv35i3dRPulRld4td2b4MGrw5Mgo/TEpkv+iylAZPwdl6k4oKdGjChPyETfMpVz8T1HwoZzyQh2NxkhdDqVM4MV24eEqH3pKqZJKxWigm9qihn3tbueAuRR6dqJr6v3Qk+RDaGVDPpY7WYHcyjyHOQcuZqJ+quahNf15hCO8ZUMwlfO9M2e7qgoHTRbv9OngpUqmfiE1yqFtqZq5yJohgqVAndZzVgkgI4OtldbM+8eiaiQENI9GCSBkxghCMQ3RukAxPRqzcukNfCOzG1YCKKy+q551ZHJL4HUw9md3fd3Ms2y9rgftti9FMXJiK4C+3+bTK8oA1z2xjP/BldetPhqQnza5cdMnNMtk043V6OOO/nOXHefb1O1YKJUTFJM2oChc182xNDInR9BG0WV3nuxVlS3s/R2o6iAzO8evkk3mO4PaH1Ytv3Z0BSnlTTZiLz2msKV6kGTFwsG3uXnzL4vvz+vrlLaAHPJvAuBKpRDZghNIYSrf95bdQdr+Xq1JDMB1r9OjCPyzLxkwlMjchSEv42McQrlq0oI5ncW/7vKMBdnInM6N0kn/w2Pz4NZLbvJxpW89aCgcy1saVxjtR45l/CrtgG5nBF2jnzcMJWMNvICmY+6ejdLfPwoFYwj3gfTJbHWbX+eFTM98Csyibt0wQrzYXJzCJTmW0TfitI6APf3+dqPjMIXwaSws4yNJ3ZppOmOQfHDsdXTiOZzJ/egEBjat3PGI13G8ks57fNEXQayg1n5ot5biF0C8r+mc2MF3095Az9IsOZ9bJLK4IOTsNPQWfg0Qfo4ByNIJrIBGYMgT2ayGimBzGhj6MxmpkBTAoxHFNCHHOIEObojLxrpiW16ZjbxzGHOKY7087ialNCXG0OcUzHnMUxJcQxh7gLiqvNWRxTQhxziGM65iyOKSGOOcS1ghxzFr3GUKD1Op4rdUBPFUGreODLshzTaybJcvkV9lrhis/niLAAegiMkMf8s/LG0911YCLsnybxR8+zLbbBT2qSebnbZLFfLZg/i5m+8ttGCPn2h+jB3DwKmJasNmzJ2tGWrARuybrutqzSb8k7F2x5g4Yl70Ox5e02fWx4V9FXrHjzlCH5D1n9Yr+WsygIAAAAAElFTkSuQmCC" height=20px width=40px></p>
+     <i class="fab fa-google"></i>
+	<i class="fab fa-facebook"></i>
+	<i class="fab fa-linkedin"></i>
+	<i class="fab fa-twitter"></i>
+    </form>
+</div>
+    <!-- Form -->
+
+  </mdb-card-body>
+</div>
+</body>
+</mdb-card>
+
+</html>
+<!-- Material form login --><i class="fab fa-google"></i>  

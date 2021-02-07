@@ -1,0 +1,352 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="stylesheet" href="animate.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+background-color:rgba(255,255,255);
+}
+.bar1
+{
+background-color:rgb(255,0,0);
+color:rgba(46, 204, 113);
+}
+.cc
+{
+color:rgba(46, 204, 113);
+margin-left:150px;
+}
+.nav-link:hover
+{
+color:white;
+}
+.dropdown-item:hover
+{
+background-color:rgba(128, 128, 128);
+}
+ .carousel-inner img {
+    width: 100%;
+    height: 80%;
+  }
+.cont .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7); 
+  color: #f1f1f1;
+  width: 86%;
+  padding: 20px;
+}
+.dd:hover
+{
+border:solid 5px rgba(230,230,230);
+border-top-left-radius:5%;
+border-bottom-right-radius:5%;
+transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+li
+{
+float:left;
+padding-left:50px;
+}
+.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-right: 10px;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover {
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+}.inn
+{
+float:left;
+width:250px;
+margin-left:85px;
+padding-bottom:40px;
+}
+.inn2:hover
+{
+background-color:rgba(46,204,113);
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar bar1 navbar-expand-md  navbar-dark fixed-top">
+   <h3 class="navbar-brand" style="color:rgb(255, 255, 255);">Foodie</h3>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link cc" href="#" style="color:rgb(255, 255, 255);">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cc" href="about.html" style="color:rgb(255, 255, 255);">About Us</a>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link cc dropdown-toggle drop1" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(255, 255, 255);">
+        Menu
+      </a>
+      <div class="dropdown-menu menu1">
+        <a class="dropdown-item" href="#">Breakfast</a>
+        <a class="dropdown-item" href="#">Lunch</a>
+        <a class="dropdown-item" href="#">Dinner</a>
+      </div>
+    </li>
+  <li class="nav-item ">
+      <a class="nav-link cc" href="gall.html" style="color:rgb(255, 255, 255);">
+        Gallery
+      </a>
+     
+    </li>
+  <li class="nav-item">
+      <a class="nav-link cc" href="login.html" style="color:rgb(255, 255, 255);">
+        Login
+      </a>
+         </li>
+  </ul>
+  </div>  
+</nav>
+<h1>fgfg</h1>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="logos.jpg" alt="Delicious" width="85%" height="25%">
+<div class="a carousel-caption">
+        <h2 class="wow fadeInRight slow"><i>The Best Tasting Experience!</i></h2>
+        <h1 class="wow fadeInLeft slow" style="color:rgb(255, 0, 0);"><i><b>Food is love</b></i></h1>
+        <p class="wow fadeInRight slow"><i>Good Food, Good Mood!</i></p>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <img src="healthy.png" alt="Taste" width="100%" height="25%">
+<div class="b carousel-caption">
+        <h2 class="wow fadeInLeft slow"><i>It's An Honour For Us To Serve You!</i></h2>
+        <h1 class="wow fadeInRight slow" style="color:rgb(255, 0, 0);"> <i><b>Eat Healthy</b></i> </h1>
+        <p class="wow fadeInLeft slow"><i>Trust us we provide good quality!</i></p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="taste.jpg" alt="Sweet" width="100%" height="25%">
+<div class="a carousel-caption">
+        <h2 class="wow fadeInRight slow"><i>Taste In Every Bite</i></h2>
+        <h1 class="wow fadeInLeft slow" style="color:rgb(255, 0, 0);"><i>Live...Love...Bake</i></h1>
+        <p class="wow fadeInRight slow"><i>Food Is Fuel!</i></p>
+      </div> 
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<br/>
+<br>
+<div class="cont">
+<div class="col-md-3" style="float:left;">
+           <img class="wow fadeInLeft slow" src="pasta.jpg" alt="inn_logo" style="height:50%; width:93%;">
+<div class="content dd wow fadeInRight slow">
+    <h1 style="color:rgba(255, 0, 0);">Pasta</h1>
+    <p>with extra cheese toppings on it.</p>
+<p>Rs.200</p>
+  </div>
+       </div>
+       <div class="col-md-3" style="float:left;">
+           <img class="wow fadeInRight slow" src="momos.jpg" alt="css_logo" style="height:50%; width:93%;">
+<div class="content dd wow fadeInLeft slow"">
+    <h1 style="color:rgba(255, 0, 0);">Momos</h1>
+    <p>more spicy and tasty with flavours.</p>
+<p>Rs.150</p></div>
+       </div>
+       <div class="col-md-3" style="float:left;">
+           <img class="wow fadeInLeft slow" src="fries.jpg" alt="inn_logo" style="height:50%; width:93%;">
+<div class="content dd wow fadeInRight slow"">
+    <h1 style="color:rgba(255, 0, 0);">Fries</h1>
+    <p>taste the different seasoning on it.</p>
+<p>Rs.120</div>
+       </div>
+       <div class="col-md-3" style="float:left;">
+           <img class="wow fadeInRight slow" src="cuisine.jpg" alt="css_logo" style="height:50%; width:93%;">
+<div class="content dd wow fadeInLeft slow"">
+    <h1 style="color:rgba(255, 0, 0);">Cuisine</h1>
+    <p>a taste of home.</p>
+<p>Rs.200  </div>
+       </div>
+<br><br>
+</div>
+<br><br></br><br><br><br></br><br><br><br></br><br><br><br></br><br>
+<div style="background-color:white;height:70%;">
+<br><br><br>
+<div class="col-md-3" style="float:left;">
+<img src="waiter.png" class="waiter wow slideInDown slow" style="margin-left:30%">
+</div>
+<div class="dd wow slideInDown slow" style="background-color:rgba(255, 204, 204);float:right;width:35%;height:70%;padding:30px; margin-right:5%">
+<h2 style="color:white;text-align:center;"><span style="color:rgba(255, 0, 0);"><b>Discover a unique experience</b></h2>
+<p style="color:black;">We have give you a great meal plans at a fraction of the cost. The tags make it easy to search for a specific meals. We allowing you to browse  multiple categories of food at once, with your favourites easier to find, while clarifying the distinction between different food generes.</p>
+<a href="plan.html" class="btn btn-success btn-lg">
+      <span class="glyphicon glyphicon-print"></span> Choose Your Plan
+    </a>
+</div>
+</div>
+      <section class="section-xl bg-default">
+        <div class="container-fluid">
+
+          <div class="row row-50 justify-content-sm-center">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <div class="content_img" style="float:left; margin-left:1%;">
+                <figure><img src="Kitchen.jpg" alt="" width="450" height="649"/>
+                </figure>
+                
+                  <h1>Kitchen</h1>
+                  <h5><i>Our modern kitchen is a treasure of taste and happiness.</i></h5>
+                  <hr class="divider-minimal">
+                </div>
+              
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <div class="content_img" style="float:left; margin-left:2%;">
+                <figure><img src="interior.png" alt="" width="450" height="649"/>
+                </figure>
+                
+                  <h1>Interior</h1>
+                  <h5><i>Do you value relaxing, friendly atmosphere?</i></h5>
+                  <hr class="divider-minimal">
+                </div>
+              
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <div class="content_img" style="float:left; margin-left:3%;">
+                <figure><img src="exterior.jpg" alt="" width="450" height="649"/>
+                </figure>
+                
+                  <h1>Exterior</h1>
+                  <h5><i>We have very attractive and comfortable exterior.</i></h5>
+                  <hr class="divider-minimal">
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div style="background-color:white;padding:50px;">
+
+<h1 style="color:white; text-align:center; background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('team3.jpg'); width:100%; height:100%; "><b>Meet Our Team</b><br/><br/><br/>
+<i>Foodie is a family owned restaurant, which treasures the atmosphere just as much as the dining menu.We've assembled a strong team of professionals, all of whom aspire to constantly excel and step it up!</i></h1>
+</div>
+<br/><br/>
+ <section class="section-xl bg-default">
+        <div class="container">
+          <h1>Our Standards</h1>
+          <div class="row row-xl justify-content-sm-center row-70">
+            <div class="col-md-6 col-lg-4">
+              <hr class="divider-minimal divider__left">
+              <h4>Casually European</h4>
+              <p>With our menu being centered around the casual European dishes, we have both Greek, French and Italian food...</p>
+            </div>
+ <div class="col-md-6 col-lg-4">
+              <hr class="divider-minimal divider__left">
+              <h4>American Comfort</h4>
+              <p>Despite being a European restaurant, visiting our place feels just as casual as any traditional American restaurant would feel...</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <hr class="divider-minimal divider__left">
+              <h4>Event-friendly</h4>
+              <p>If you're considering celebrating a personal or a business occasion at our restaurant, all of our 3 big dining halls will be ready for you!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<br>
+
+</html>
+<footer class="font-small indigo" style="background-color:rgba(255, 0, 0);">
+<div class="container">
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="about.html" style="color:rgba(255, 255, 255);">About us</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" style="color:rgba(255, 255, 255);">Orders</a>
+        </h6>
+      </div>
+      
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" style="color:rgba(255, 255, 255);">Help</a>
+        </h6>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="contact.html" style="color:rgba(255, 255, 255);">Contact</a>
+
+        </h6>
+      </div>
+    </div>
+
+ <hr   style="margin: 0 15%;background-color:rgba(255, 255, 255);"><br>
+        <p style="line-height: 1.7rem;color:rgba(255, 255, 255);">We base our service policy on the principles of hygiene, quick, professionalism and quality. As staffs entrusted with the duties
+to maintain the customer satisfaction and quality food, we will not compromise with our policy. </p>
+  <div class="footer-copyright text-center py-3" style="color:white;">© 2020 Copyright:
+    <span style="color:rgba(255, 255, 255);"> Foodie.com</span>
+  </div>
+ 
+</footer>
+ <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+</body>
+</html>
